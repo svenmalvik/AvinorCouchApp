@@ -1,4 +1,4 @@
 {
   "view": "flights",
-  "limit": "2"
+  "limit": "100"
 }
