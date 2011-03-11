@@ -1,6 +1,23 @@
-<ul>
-{{#flights}}
-	<li>{{value}}</li>
-{{/flights}}
-</ul>
+<table>
+	<tr>
+		<th>flightId</th>
+		<th>airport</th>
+		<th>scheduledTime</th>
+		<th>airline</th>
+		<th>belt</th>
+		<th>status</th>		
+	</tr>
+	{{#flights}}
+		<tr>
+		{{#value}}
+			<td>{{flightId}}</td>
+			<td>{{airport}}</td>
+			<td>{{scheduledTime}}</td>
+			<td>{{airline}}</td>
+			<td>{{belt}}</td>
+			<td>{{status}}</td>
+		{{/value}}
+		</tr>
+	{{/flights}}
+</table>
 

@@ -12,14 +12,13 @@ function(doc) {
 		doc.delayed = "";
 	}
 
-	emit(	[doc.schedule_time, doc.airport], 
-		[	doc.flight_id, 
-			doc.airline, 
-			doc.belt,
-			time,
-			doc.airport,
-			doc.status
-		]
-	);	
-}
+	emit(	[doc.schedule_time,doc.airline], {
+			flightId:	doc.flight_id,
+			airline:	doc.airline,
+			scheduledTime:	time,
+			airport:	doc.airport,
+			belt:		doc.belt,
+			status:		doc.status
+	});	
+};
 
